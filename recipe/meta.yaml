@@ -12,6 +12,7 @@ source:
     patches:
         - patches/boost-shared.patch
         - patches/compile_definitions.patch
+        - patches/version_string.patch
 
 build:
     number: 2
