@@ -29,14 +29,15 @@ requirements:
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
-        - libboost-devel
-        - libboost-python-devel
     host:
         - python
         - pip
         - scikit-build-core
+        - libboost-devel
+        - libboost-python-devel
     run:
         - python
+        - libboost-python
 
 test:
   imports:
