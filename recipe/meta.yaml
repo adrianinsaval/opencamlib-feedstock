@@ -23,7 +23,7 @@ requirements:
         - ninja
         - cmake
         - make
-        - python                                 # [build_platform != target_platform]
+        - python
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - llvm-openmp  # [osx]
         - libgomp      # [linux]
